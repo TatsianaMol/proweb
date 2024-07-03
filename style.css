@@ -1,0 +1,179 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing:inherit;
+    
+}
+
+:root{
+    --accent-color: #34547A;
+}
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.container{
+    max-width: 989px;
+    margin: 0 auto;
+}
+
+.header {
+    min-height: 740px;
+    background-color: #EEEFF1;
+
+}
+.container_title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 79px;
+
+}
+
+.container_title-list {
+    display: flex;
+   
+}
+
+.text_m{
+    font-size: 48px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-weight: 400;
+}
+
+.container_title-item{
+    list-style: none;
+    margin-right: 42px;
+}
+.container_info {
+    display: flex;
+}
+.container_info-img {
+    margin-right: 117px;
+    margin-top: 183px;
+}
+.container_info-text {
+    margin-top: 110px;
+
+}
+.container_info-main{
+    margin-bottom: 60px;
+}
+.container_bth {
+    padding: 25px 41px;
+    background-color: var(--accent-color);
+    color: #ffffff;
+    border: #ffffff;
+}
+
+
+@media screen and (max-width:1280px) {
+    .container_info {
+        margin-right: 20px;
+    }
+
+    .container_bth {
+        padding: 10px 35px;
+        background-color: var(--accent-color);
+        color: #ffffff;
+        border: #ffffff;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .container_info {
+      /*   padding-right: 20px; */
+        flex-direction: column;
+        padding: 20px; 
+
+    }
+    .container_title-list {
+        flex-direction: column;
+        text-align: center;
+    
+    }
+
+    .container_title {
+      padding: 50px;
+    }
+
+}
+
+.about_text{
+    text-align: center;
+
+}
+
+.about_textall{
+    margin: 0 238px 100px 238px;
+
+}
+
+@media screen and (max-width:768px) {
+    .about_textall{
+        margin: 0 150px 50px 150px;
+    }
+
+}
+
+
+.numbers{
+    min-height: 250px;
+    background-color: var(--accent-color);
+    color: #ffffff;
+}
+
+.numbers_box{
+    display: flex;
+    padding-top: 100px;
+    justify-content: center;
+}
+
+.numbers_items{
+    display: flex;
+    margin-right: 49px;
+    
+}
+.numbers_items:last-child{
+    margin: 0;
+}
+
+.items_text p{
+    margin: 2px 0 0 0;
+}
+
+.items_text{
+    margin-left: 20px;
+}
+
+
+@media screen and (max-width:768px) {
+    .numbers_box{
+        flex-direction: column;
+        margin: 20px;
+        align-items: center;
+    }
+
+
+    .numbers_box{
+        padding-top: 30px;
+       
+    }
+
+    .numbers_items{
+      margin-bottom: 20px;
+        
+    }
+
+    .numbers_items:last-child{
+        margin-right: 49px;
+    }
+}
+
+
