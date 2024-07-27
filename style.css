@@ -18,7 +18,7 @@ body{
 }
 
 .container{
-    max-width: 989px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
@@ -176,4 +176,141 @@ body{
     }
 }
 
+.skills-flex{
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 101px;
+    margin-top: 120px;
+}
+
+.skills-item{
+    margin-right: 150px;
+}
+
+.skills-p{
+    font-size: 32px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.skills-span{
+    color: var(--accent-color);
+
+}
+
+.skills-line{
+    width: 445px;
+    height: 4px;
+    background-color: #C4C4C4;
+    margin-bottom: 29.76px;
+    margin-top: 19.88px;
+   
+}
+
+.skills-line::after{
+    content: '';
+    display: block;
+    width: 349.46px;
+    height: 4px;
+    background-color: #34547A;
+  
+}
+
+
+@media screen and (max-width:768px) {
+    .skills-flex{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        justify-content: center;
+    }
+
+    .skills-item{
+       align-items: center;
+    }
+    
+}
+
+
+.video{
+    background-color: #EEEFF1;
+}
+
+.video_main{
+    text-align: center;
+    padding-top: 100px;
+}
+
+.video_text{
+    text-align: center;
+    color: rgb(165, 165, 180);
+    padding-bottom: 50px;
+    padding: 0 300px 0 300px;
+}
+
+.svideo_main{
+    text-align: center;
+    padding-top: 80px;
+}
+
+.video_img{
+    margin-top: 50px;
+    width:1110px;
+    height:600px; 
+    margin-bottom: 100px;
+}
+
+@media screen and (max-width:768px) {
+    .video_img{
+        width:550px;
+        height:300px; 
+        margin-left: 80px;
+        padding-bottom: 20px;
+    }
+    
+    .video_text{
+        padding: 0 200px 0 200px;
+    }
+    
+}
+
+.project_grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid_item{
+    display: block;
+    position: relative;
+}
+
+.grid_item::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(52, 84, 122, 0.8);
+    opacity: 0;
+    transition: opacity 0.4s linear;
+
+}
+
+.grid_item:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("img/Group.png") no-repeat center center;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.4s ease;
+}
+.grid_item:hover:after,
+.grid_item:hover:before {
+    opacity: 1;
+}
 
