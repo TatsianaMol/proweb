@@ -385,3 +385,25 @@ body{
     letter-spacing: 1.2px;
    
 }
+
+.footer {
+    background-color: var(--accent-color);
+    color: #ffffff;
+    height: 151px;
+    
+   
+}
+.foter-flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.vk{
+    margin-top: 56px;
+   
+}
+
+.notvk{
+    margin-top: 45px;
+}
+
